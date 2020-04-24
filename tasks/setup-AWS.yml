@@ -1,11 +1,3 @@
 ---
-- name: Ensure old versions of Docker are not installed.
-  package:
-    name:
-      - docker
-      - docker-common
-      - docker-engine
-    state: absent
-
 - name: Update yum cache
   yum: update_cache=yes
