@@ -9,7 +9,7 @@
   when: ansible_os_family == 'RedHat' and ansible_distribution == 'Amazon'
 
 - name: Install the most recent Docker Community Edition package.
-  command: amazon-linux-extras install docker
+  command: amazon-linux-extras install docker -y
   when: ansible_os_family == 'RedHat' and ansible_distribution == 'Amazon'
 
 - name: Install Docker.
