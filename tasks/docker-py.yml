@@ -1,0 +1,13 @@
+---
+- name: Remove old library docker-py with pip
+  pip:
+    name:
+      - docker-py
+    state: absent
+
+- name: Install new library docker for Ansible-docker communication and jsondiff library
+  pip:
+    name:
+      - docker
+      - jsondiff
+    state: present
