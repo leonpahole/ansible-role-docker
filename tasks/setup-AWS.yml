@@ -6,3 +6,6 @@
       - docker-common
       - docker-engine
     state: absent
+
+- name: Update yum cache
+  yum: update_cache=yes
